@@ -13,9 +13,15 @@ def model_prediction(test_image):
     result_index = np.argmax(prediction)
     return result_index
 
+st.set_page_config(
+    page_title="Leaf Health Detection",
+    layout="wide",  # Optional: Makes the layout more spacious
+    initial_sidebar_state="expanded"  # Ensures sidebar is always open
+)
 
 #sidebar
 st.sidebar.title("dashboard")
+
 app_mode= st.sidebar.selectbox("Select Page",["Home","About","Leaf Health Detection"])
 
 #home page
