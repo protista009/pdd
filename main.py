@@ -5,7 +5,7 @@ import numpy as np
 
 #Tensorflow Model Precision
 def model_prediction(test_image):
-    model= tf.keras.models.load_model('trainnew_model.h5')
+    model= tf.keras.models.load_model('trainnew_modell.h5')
     image =tf.keras.preprocessing.image.load_img(test_image,target_size=(128,128))
     input_arr=tf.keras.preprocessing.image.img_to_array(image)
     input_arr=np.array([input_arr]) #convert single image to batch
