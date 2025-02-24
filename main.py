@@ -91,4 +91,4 @@ elif app_mode == "Leaf Health Detection":
         result_index = model_prediction(test_image)
        #define class
         class_name = ['healthy', 'unhealthy']
-        st.success(" It is {} leaf ".format(class_name[result_index]))
+        st.success("{} leaf ".format(class_name[result_index]))
