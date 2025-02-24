@@ -27,7 +27,7 @@ app_mode= st.sidebar.selectbox("Select Page",["Home","About","Leaf Health Detect
 #home page
 if(app_mode=="Home"):
     st.header("LEAF HEALTH DETECTION")
-    image_path="home_page.jpeg"
+    image_path="pexels-pixabay-86397.jpg"
     st.image(image_path,use_column_width=True)
     st.markdown("""
 # Leaf Health Detection
@@ -91,4 +91,4 @@ elif app_mode == "Leaf Health Detection":
         result_index = model_prediction(test_image)
        #define class
         class_name = ['healthy', 'unhealthy']
-        st.success(" It is {} leaf ".format(class_name[result_index]))
+        st.success("{} leaf ".format(class_name[result_index]))
