@@ -27,7 +27,7 @@ app_mode= st.sidebar.selectbox("Select Page",["Home","About","Leaf Health Detect
 #home page
 if(app_mode=="Home"):
     st.header("LEAF HEALTH DETECTION")
-    image_path="home_page.jpeg"
+    image_path="pexels-pixabay-86397.jpg"
     st.image(image_path,use_column_width=True)
     st.markdown("""
 # Leaf Health Detection
