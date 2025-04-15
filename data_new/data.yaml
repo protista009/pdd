@@ -1,0 +1,17 @@
+
+train: data_new/train/images
+val: data_new/valid/images
+test: data_new/test/images
+
+nc: 2
+names: ['healthy', 'unhealthy']
+
+nc: 2
+names: ['healthy', 'unhealthy']
+
+roboflow:
+  workspace: prior
+  project: img_detection-egqdn
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/prior/img_detection-egqdn/dataset/1
